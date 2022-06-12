@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styl5.css" rel="stylesheet">
-    <script src="script.js" typ="text/javascript"></script>
+    
     <title>Dom weselny</title>
 </head>
-<body>
+<body >
     <div class="banner">
         <h1>
             <img src="logo.png">
@@ -38,12 +38,13 @@
     </div>
 
     <div class="dol">
-        
-        <form data-form-name="goscie">
-            <h2>Podaj liczbę gości</h2><input type="number"></br>
-            <input type="checkbox"> Welese z poprawinami? </br>
-            <button type="submit" name="oblicz">Oblicz Koszt</button>
+        <h2>Ile bedzie kosztować wesele</h2>
+        <form name="form" onsubmit="oblicz()">
+            Podaj liczbę gości<input type="number" name="ilosc"></br>
+            <input type="checkbox" id="popraw" name="popraw"> Welese z poprawinami? </br>
+            <input type="submit" name="licz" value="Oblicz Koszt!">
         </form>
+        <script src="script.js" typ="text/javascript"></script>
     </div>
 
     <div class="stopka">
