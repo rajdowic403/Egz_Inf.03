@@ -1,20 +1,25 @@
+document.open
 const oblicz = () =>{
 
     let gosc = parseInt(document.forms['form']['ilosc'].value);
 
     let poprawiny = document.forms['form']['popraw'].checked;
-
+if(gosc > 0){
     if(poprawiny == true){
-        
-        document.write("Koszt wynosi: " + (100 * gosc)*1.3 );
+        let zpopra = "Koszt wynosi: " + (100 * gosc)*1.3;
+        document.getElementById("dol").innerHTML = zpopra;
         
     }
     else{
-        document.write("Koszt wynosi: " + 100 * gosc);
+        let bez = "Koszt wynosi: " + 100 * gosc;
+        document.getElementById("dol").innerHTML = bez;
         
     }
     
-
+}
+else{
+    document.getElementById("dol").innerHTML = "podaj poprawną liczbę gości!";
+}
 
 
 }
