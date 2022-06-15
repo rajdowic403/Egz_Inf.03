@@ -1,0 +1,65 @@
+/* Górna cześć */
+
+
+.banner{
+    background-color: #1C59A7;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+
+.banner img{
+    height: 70px;
+    }
+/* Kolumny */
+
+.lewy, .srodkowy{
+    width: 33%;
+}
+
+
+.lewy, .prawy, .srodkowy{
+float: left;
+height: 200px;
+}
+
+
+.lewy{
+    background-color: #3A70B5;
+}
+
+
+.srodkowy{
+    background-color: #5A8AC8;
+}
+
+
+.prawy{
+    background-color: #86ACDD;
+    text-align: center;
+    width: 34%;
+}
+
+.prawy a{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+/* Dolna część strony */
+
+.dol{
+    background-color: #86ACDD;
+    text-align: center;
+    height: 300px;
+}
+
+
+.stopka{
+    color: white;
+    background-color: #1C59A7;
+}
+ .stopka a, .stopka a:hover, .stopka a:visited, .stopka a:active{
+     color: white;
+     text-decoration: none;
+ }
